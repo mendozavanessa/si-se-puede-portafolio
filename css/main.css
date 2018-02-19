@@ -8,6 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav {
+  background-color: #ef9dc0;
+}
 .slider .slides li .text {
     color: #fff;
     position: absolute;
@@ -34,7 +37,7 @@
     color: white;
     font-weight: 900;
 }
-.animar2 {
+.space {
   padding: 1em;
   font-size: 1.5em;
 }
@@ -44,6 +47,17 @@
 }
 .top {
   margin-top: 3em;
+}
+h2 {
+  display: inline-block;
+}
+.project {
+  width: 25%;
+  display: inline-block;
+  margin: auto 2.3em;
+}
+.parallax-container {
+  height: 600px;
 }
 /*Estilo del boton arriba*/
 
@@ -83,7 +97,7 @@ background: url(http://lh5.googleusercontent.com/-luDGEoQ_WZE/T1Ak-gta5MI/AAAAAA
 
 
 #Abajo {
--webkit-transform:rotate(180deg);
+-webkit-transform: rotate(180deg);
 position: fixed;
 bottom: 30px; /* Distancia desde abajo */
 right: 30px; /* Distancia desde la derecha */
