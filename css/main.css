@@ -34,7 +34,6 @@ nav {
 }
 .fuente1 {
     font-family: fuente1;
-    color: white;
     font-weight: 900;
 }
 .space {
@@ -58,6 +57,23 @@ h2 {
 }
 .parallax-container {
   height: 600px;
+}
+.letter1 {
+  font-size: 2em;
+}
+.letter {
+  font-size: 1.5em;
+}
+.padding {
+  padding: 2em auto;
+}
+.animar1 {
+  left: 0!important;
+  height: 0!important;
+  width: 300px!important;
+}
+.animar2 {
+  right: 0!important;
 }
 /*Estilo del boton arriba*/
 

@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $('.parallax').parallax();
+  $(".button-collapse").sideNav();
   var options = [{
     selector: '.animar1',
     offset: 0,
