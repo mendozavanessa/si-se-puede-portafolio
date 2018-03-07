@@ -11,6 +11,9 @@
 nav {
   background-color: #ef9dc0;
 }
+.nav-wrapper a img {
+  width: 130px;
+}
 .slider .slides li .text {
     color: #fff;
     position: absolute;
@@ -38,7 +41,6 @@ nav {
 }
 .space {
   padding: 1em;
-  font-size: 1.5em;
 }
 .typed2 {
   background-color: transparent;
@@ -56,10 +58,10 @@ h2 {
   margin: auto 2.3em;
 }
 .parallax-container {
-  height: 600px;
+  height: 500px;
 }
 .letter1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .letter {
   font-size: 1.5em;
@@ -68,64 +70,78 @@ h2 {
   padding: 2em auto;
 }
 .animar1 {
-  left: 0!important;
   height: 0!important;
   width: 300px!important;
 }
-.animar2 {
-  right: 0!important;
-}
-/*Estilo del boton arriba*/
 
-#Arriba {
-position: fixed;
-bottom: 30px; /* Distancia desde abajo */
-right: 30px; /* Distancia desde la derecha */
-/*BOTON*/
-width: 60px; /* Ancho del botón */
-height: 60px; /* Alto del botón */
-display: block;
-background: url(http://lh5.googleusercontent.com/-luDGEoQ_WZE/T1Ak-gta5MI/AAAAAAAACPI/ojfEGiaNmGw/s60/flecha-arriba.png) no-repeat center center;
+.flex-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-text h3, h1{
+  background-color: #ef9dc036;
+  padding: 0.1em;
 }
 
-#Arriba:hover{
-	cursor: pointer;
+/*********************************************/
+.slide {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
 }
 
-
-/*Estilo del boton arriba y abajo*/
-
-#Arriba1{
-
-position: fixed;
-bottom: 100px; /* Distancia desde abajo */
-right: 30px; /* Distancia desde la derecha */
-/*BOTON*/
-width: 60px; /* Ancho del botón */
-height: 60px; /* Alto del botón */
-display: block;
-background: url(http://lh5.googleusercontent.com/-luDGEoQ_WZE/T1Ak-gta5MI/AAAAAAAACPI/ojfEGiaNmGw/s60/flecha-arriba.png) no-repeat center center;
-}
-
-#Arriba1:hover{
-	cursor: pointer;
+.hasSlid {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
 
 
-#Abajo {
--webkit-transform: rotate(180deg);
-position: fixed;
-bottom: 30px; /* Distancia desde abajo */
-right: 30px; /* Distancia desde la derecha */
-/*BOTON*/
-width: 60px; /* Ancho del botón */
-height: 60px; /* Alto del botón */
-display: block;
-background: url(http://lh5.googleusercontent.com/-luDGEoQ_WZE/T1Ak-gta5MI/AAAAAAAACPI/ojfEGiaNmGw/s60/flecha-arriba.png) no-repeat center center;
+
+/******* to top link ********/
+.scroll-top-wrapper {
+  position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+  background-color: #ef9dc0;
+	color: #eee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 5px;
+	border-radius: 50%;
 }
 
-#Abajo:hover{
-	cursor: pointer;
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+
+.scroll-top-wrapper.show {
+  visibility:visible;
+  cursor:pointer;
+	opacity: 0.80;
+}
+
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
 }
 
 /**************************************************/
