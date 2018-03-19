@@ -43,10 +43,6 @@ nav {
 .space {
   padding: 1em;
 }
-.typed2 {
-  background-color: transparent;
-  box-shadow: none;
-}
 .top {
   margin-top: 3em;
 }
@@ -92,7 +88,7 @@ h2 {
   display: inline-block;
 }
 .margin-skills {
-  margin-left: 4em;
+  margin-left: 11em;
 }
 .margin-top-skills {
   margin-top: 5em;
