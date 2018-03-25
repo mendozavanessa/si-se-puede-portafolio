@@ -127,13 +127,13 @@ h1 {
   font-weight: 900;
 }
 
-.btn-large:hover {
+.btn:hover {
   background-color: #ef9dc0;
   border: 2px solid white;
   color: white;
 }
 
-.btn-large:focus {
+.btn:focus {
   background-color: #ef9dc0ab;
   border: 2px solid white;
   color: white;
@@ -145,17 +145,7 @@ h1 {
   font-weight: 900;
 }
 
-.btn:hover {
-  background-color: #ef9dc03a;
-  border: 2 px solid #fc0069;
-  color: rgb(128, 128, 128);
-}
 
-.btn:focus {
-  background-color: #ef9dc03a;
-  border: 2 px solid #fc0069;
-  color: rgb(128, 128, 128);
-}
 
 .ih-item.circle .img:before {
   border: 5px solid #ef9dc0;
@@ -197,6 +187,7 @@ h1 {
   -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  padding: 1em 6em 3em 6em;
 }
 
 .pulse-button2 {

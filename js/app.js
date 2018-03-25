@@ -12,9 +12,15 @@ $('.card').mouseenter(function(e) {
   if ($(this).find('> .card-reveal').length) {
     if ($(e.target).is($('.card .activator')) || $(e.target).is($('.card .activator i'))) {
       // Make Reveal animate up
-      $(this).find('.card-reveal').css({display: 'block'}).velocity('stop', false).velocity({translateY: '-100%'}, {duration: 300,
+      $(this).find('.card-reveal').css({
+        display: 'block'
+      }).velocity('stop', false).velocity({
+        translateY: '-100%'
+      }, {
+        duration: 300,
         queue: false,
-        easing: 'easeInOutQuad'});
+        easing: 'easeInOutQuad'
+      });
     }
   }
 
@@ -23,17 +29,31 @@ $('.card').mouseenter(function(e) {
 
 $('.card').mouseleave(function() {
   // Make Reveal animate down and display none
-  $(this).find('.card-reveal').velocity(
-    {translateY: 0},
-    {
-      duration: 225,
-      queue: false,
-      easing: 'easeInOutQuad',
-      complete: function() {
-        $(this).css({display: 'none'});
-      }
-    });
+  $(this).find('.card-reveal').velocity({
+    translateY: 0
+  }, {
+    duration: 225,
+    queue: false,
+    easing: 'easeInOutQuad',
+    complete: function() {
+      $(this).css({
+        display: 'none'
+      });
+    }
+  });
 
 
   /* ******************************************************** */
+  var beepOne = $('#beep-one')[0];
+  $('#rimshot-hover-sound')
+    .mouseenter(function() {
+      beepOne.play();
+    });
+
+  var rimShotAudio = $('#beep-one');
+
+  function playRim() {
+    rimShotAudio.play();
+  }
+  item.addEventListener('mouseover', rimShotAudio.playRim, false);
 });
