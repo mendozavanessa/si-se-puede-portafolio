@@ -44,7 +44,7 @@ $('.card').mouseleave(function() {
 
 
   /* ******************************************************** */
-  var beepOne = $('#beep-one')[0];
+/*   var beepOne = $('#beep-one')[0];
   $('#rimshot-hover-sound')
     .mouseenter(function() {
       beepOne.play();
@@ -55,5 +55,5 @@ $('.card').mouseleave(function() {
   function playRim() {
     rimShotAudio.play();
   }
-  item.addEventListener('mouseover', rimShotAudio.playRim, false);
+  item.addEventListener('mouseover', rimShotAudio.playRim, false); */
 });
