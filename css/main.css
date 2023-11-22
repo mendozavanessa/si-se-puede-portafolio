@@ -367,6 +367,12 @@ h1 {
   /*background */
   background: black no-repeat 0px 0px;
 }
+/****************** frase sobre mi***********************/
+.phrase {
+  color: rgb(236, 128, 207);
+  font-size: 19px;
+  font-family: cursive;
+}
 
 /*******************skills desktop**********************/
 
