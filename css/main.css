@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+.fa-gitlab{
+  margin-right: 1.5rem;
+}
+
 nav {
   background-color: #ef9dc0;
 }
